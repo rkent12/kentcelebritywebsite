@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="This sentence will appear under the link in search engine results.">
+	<meta name="keywords" content="list,of,words,separated,by,commas,that,describe,your,site">
+	<meta name="author" content="Your name goes here">
+
+	<!-- viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- shiv which should be a shim -->
+    <!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<![endif]-->
+
+	<!-- tab title -->
+	<title>Videos | Post Malone</title>
+
+	<!-- favicon link -->
+	<link rel="shortcut icon" href="images/webicon.jpg">
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+	<link href="https://fonts.googleapis.com/css?family=Nova+Square" rel="stylesheet">
+
+    <!-- slicknav -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>   <!-- Link to jQuery Content Delivery Network - Necessary for SlickNav to work correctly -->
+    <script src="js/jquery.slicknav.min.js"></script>                     <!-- Link to the slicknav file inside the js folder - Necessary for SlickNav to work correctly -->
+
+	<!-- slicknav javascript - this javascript code will use the UL inside the nav_menu tag to build the same menu in slickNav format -->
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('.nav_menu').slicknav({prependTo:"#mobilemenu"});
+    	});
+    </script>
+
+</head>
+
+<body>
+
+	<header class="clearfix">
+		<a href="index.html"><img src=images/pmbackground.jpg></a>
+		<h1><a href="index.html">Post Malone</a></h1>
+	</header>
+
+    <nav id="mobilemenu"></nav>
+	<nav class="nav_menu">
+    	<ul>
+        	<li><a href="home.html">Discography</a></li>
+        	<li><a href="video.html">Videos</a></li>
+        	<li><a href="gallery.html">Gallery</a></li>
+        	<li><a href="mailinglist.html">Mailing List</a></li>
+    	</ul>
+	</nav>
+
+	<nav class="bookmarks">
+		<ul>
+			<li><a href="#vid1">Video 1</a></li>
+			<li><a href="#vid2">Video 2</a></li>
+			<li><a href="#vid3">Video 3</a></li>
+			<li><a href="#vid4">Video 4</a></li>
+			<li><a href="#vid5">Video 5</a></li>
+			<li><a href=".">Home</a></li>
+		</ul>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Return To Top</button>
+	</nav>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+	<section>
+		<article id="vid1">
+			<h4>Post Malone: Circles (2019)</h4>
+			<div class="videowrapper">
+				<iframe src="https://www.youtube.com/embed/wXhTHyIgQ_U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="caption">
+				<p>
+					Post Malone Circles Music Video<br>
+					September, 2019 On Youtube
+				</p>
+			</div>
+		</article>
+
+		<article id="vid2">
+			<h4>Post Malone: Go Flex (2016)</h4>
+			<div class="videowrapper">
+				<iframe src="https://www.youtube.com/embed/tQjsAJhsSw8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="caption">
+				<p>
+					Post Malone Go Flex Music Video<br>
+					Release date: April, 2016 (Youtube)<br>
+				</p>
+			</div>
+		</article>
+		<article id="vid3">
+			<h4>Video 3: Live On Youtube 2021 (Full Concert)</h4>
+			<div class="videowrapper">
+				<iframe src="https://www.youtube.com/embed/G-kGzeZbEV4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="caption">
+				<p>
+					Post Malone Live Virtual Pokemon Concert  (Full Concert)<br>
+					Song Selection:
+				</p>
+				<p class="twocol">
+					0:31-02:31: Psycho <br>
+					02:32-05:57: Circles <br>
+					05:58-09:55: Only Wanna Be With You <br>
+					09:56-12:02: Congratulations <br>
+				</p>
+				<p>
+					Streamed On Youtube, On March 25, 2021.
+				</p>
+			</div>
+		</article>
+		<article id="vid4">
+			<h4>Video 4: Post Malone Previews his song, Circles, on the Jimmy Fallon Show</h4>
+			<div class="videowrapper">
+				<iframe src="https://www.youtube.com/embed/8fBimVfIwGQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="caption">
+				<p>
+					Post Malone - Live on Jimmy Fallon - August 2019
+				</p>
+			</div>
+		</article>
+		<article id="vid5">
+			<h4>Video 5: Post Malone - Live On Jimmy Fallon Show - Jimmy Fallon and Post Malone Go to Olive Garden</h4>
+			<div class="videowrapper">
+				<iframe src="https://www.youtube.com/embed/5_uSZcXMV7s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="caption">
+				<p>
+					The Tonight Show Staring Jimmy Fallon,October 2018
+				</p>
+			</div>
+		</article>
+
+	</section>
+
+	<script>
+		window.onload = function() {
+			var d = new Date();
+			document.getElementById("copyright").innerHTML = d.getFullYear();
+		}
+	</script>
+
+	<footer>
+		<p>&copy; <span id="copyright"></span> Ryan Kent Productions</p>
+	</footer>
+
+</body>
+</html>

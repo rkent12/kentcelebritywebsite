@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title> Gallery </title>
+    <meta charset="utf-8">
+
+        <!-- Viewport Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+    * {
+    box-sizing: border-box;
+    }
+
+    html {
+        background-image: url("images/PMbodybackground.jpg");
+        vertical-align: middle;
+    }
+
+    body {
+    margin: 0; 
+    font-family: Arial;
+    }
+    footer {
+        text-align: center;
+        color: black;
+    }
+    .header {
+        text-align: center;
+        color:black;
+        background-color: darkorange;
+    }
+
+    header {
+    text-align: center;
+    padding: 32px;
+    color: black;
+    }
+
+    .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    }
+
+    /* Create four equal columns that sits next to each other */
+    .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    }
+
+    .column img {
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 15px;
+    border: 3px groove darkorange;
+    }
+    .nav_menu {
+	border-bottom: 3px ridge #f0f0f5;
+}
+.nav_menu ul {
+	display: flex;
+	list-style-type: none;
+	padding: 0; 
+}
+.nav_menu ul li {
+	width: 25%;
+	background-color: black;
+	margin: 0;
+	text-align: center; 
+	transition: all .75s;
+}
+.nav_menu ul li a {
+	display: inline-block;
+	width: 100%;
+	padding: 10px 0;
+	text-decoration: none;
+	font-size: 120%;
+	color:#ff8c00;
+	font-weight: bold;
+	font-variant: small-caps;
+	transition: all .75s;
+}
+.nav_menu ul li a:hover {
+	background-color:#c47310;
+	color: black;
+}
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+    </style>
+    </head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Post Malone Custom Image Flexbox</h1>
+  <p>When the user sesize the browser window, the webpage reacts accordingly.</p>
+</div>
+<nav id="mobilemenu"></nav>
+	<nav class="nav_menu">
+    	<ul>
+        	<li><a href="home.html">Discography</a></li>
+        	<li><a href="video.html">Videos</a></li>
+        	<li><a href="gallery.html">Gallery</a></li>
+        	<li><a href="mailinglist.html">Mailing List</a></li>
+    	</ul>
+	</nav>
+
+<main>
+    <!-- Photo Grid -->
+    <div class="row"> 
+    <div class="column">
+        <img src="images/download-1.jpg">
+        <img src="images/download-2.jpg">
+        <img src="images/download-3.jpg">
+        <img src="images/download-4.jpg">
+        <img src="images/download-5.jpg">
+        <img src="images/download.jpg">
+        <img src="images/images copy.jpg">
+    </div>
+    <div class="column">
+        <img src="images/images-1.jpg">
+        <img src="images/images-2.jpg">
+        <img src="images/images-3.jpg">
+        <img src="images/images-4.jpg">
+        <img src="images/images-5.jpg">
+        <img src="images/images-6.jpg">
+    </div>  
+    <div class="column">
+        <img src="images/images-7.jpg">
+        <img src="images/images-8.jpg">
+        <img src="images/images-9.jpg">
+        <img src="images/images-10.jpg">
+        <img src="images/images-11.jpg">
+        <img src="images/images-12.jpg">
+        <img src="images/images.jpg">
+    </div>
+</main>
+<footer>
+    <p>&copy; Kent Productions </p>
+</footer>
+
+  <!--
+  <div class="column">
+    <img src="images/underwater.jpg">
+    <img src="images/ocean.jpg">
+    <img src="images/wedding.jpg">
+    <img src="images/mountainskies.jpg">
+    <img src="images/rocks.jpg">
+    <img src="images/underwater.jpg">
+  </div>
+</div>
+-->
+
+</body>
+</html>
